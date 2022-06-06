@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cardSale" targetNamespace="http://tempuri.org/cardSale.xsd" xmlns:mstns="http://tempuri.org/cardSale.xsd" xmlns="http://tempuri.org/cardSale.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="taridu_tecnicsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="taridu_tecnicsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PRINT_SHOP.Properties.Settings.GlobalReference.Default.taridu_tecnicsConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cardSale" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="cardSale" msprop:Generator_UserDSName="cardSale">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dailycardsale" msprop:Generator_TableClassName="dailycardsaleDataTable" msprop:Generator_TableVarName="tabledailycardsale" msprop:Generator_RowChangedName="dailycardsaleRowChanged" msprop:Generator_TablePropName="dailycardsale" msprop:Generator_RowDeletingName="dailycardsaleRowDeleting" msprop:Generator_RowChangingName="dailycardsaleRowChanging" msprop:Generator_RowEvHandlerName="dailycardsaleRowChangeEventHandler" msprop:Generator_RowDeletedName="dailycardsaleRowDeleted" msprop:Generator_RowClassName="dailycardsaleRow" msprop:Generator_UserTableName="dailycardsale" msprop:Generator_RowEvArgName="dailycardsaleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cards" msprop:Generator_TableClassName="cardsDataTable" msprop:Generator_TableVarName="tablecards" msprop:Generator_RowChangedName="cardsRowChanged" msprop:Generator_TablePropName="cards" msprop:Generator_RowDeletingName="cardsRowDeleting" msprop:Generator_RowChangingName="cardsRowChanging" msprop:Generator_RowEvHandlerName="cardsRowChangeEventHandler" msprop:Generator_RowDeletedName="cardsRowDeleted" msprop:Generator_RowClassName="cardsRow" msprop:Generator_UserTableName="cards" msprop:Generator_RowEvArgName="cardsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:decimal" />
+              <xs:element name="rate" msprop:Generator_ColumnVarNameInTable="columnrate" msprop:Generator_ColumnPropNameInRow="rate" msprop:Generator_ColumnPropNameInTable="rateColumn" msprop:Generator_UserColumnName="rate" type="xs:decimal" />
+              <xs:element name="profit" msprop:Generator_ColumnVarNameInTable="columnprofit" msprop:Generator_ColumnPropNameInRow="profit" msprop:Generator_ColumnPropNameInTable="profitColumn" msprop:Generator_UserColumnName="profit" type="xs:decimal" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dailycardstock" msprop:Generator_TableClassName="dailycardstockDataTable" msprop:Generator_TableVarName="tabledailycardstock" msprop:Generator_TablePropName="dailycardstock" msprop:Generator_RowDeletingName="dailycardstockRowDeleting" msprop:Generator_RowChangingName="dailycardstockRowChanging" msprop:Generator_RowEvHandlerName="dailycardstockRowChangeEventHandler" msprop:Generator_RowDeletedName="dailycardstockRowDeleted" msprop:Generator_UserTableName="dailycardstock" msprop:Generator_RowChangedName="dailycardstockRowChanged" msprop:Generator_RowEvArgName="dailycardstockRowChangeEvent" msprop:Generator_RowClassName="dailycardstockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dailycardsale" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="cards_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:cards" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="dailycardstock_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dailycardstock" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
