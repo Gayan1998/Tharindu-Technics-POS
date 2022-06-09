@@ -48,6 +48,7 @@ namespace PRINT_SHOP
                 itemRegisterToolStripMenuItem.Enabled = true;
                 salesReportCategoryViseToolStripMenuItem.Enabled = true;
                 profitReport2ToolStripMenuItem.Enabled = true;
+                cashBoxToolStripMenuItem.Enabled = true;
             }
             else if (type == "Top lavel emp")
             {

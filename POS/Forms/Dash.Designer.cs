@@ -260,6 +260,7 @@ namespace PRINT_SHOP
             // 
             // cashBoxToolStripMenuItem
             // 
+            this.cashBoxToolStripMenuItem.Enabled = false;
             this.cashBoxToolStripMenuItem.Name = "cashBoxToolStripMenuItem";
             this.cashBoxToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.cashBoxToolStripMenuItem.Text = "Cash Box";
